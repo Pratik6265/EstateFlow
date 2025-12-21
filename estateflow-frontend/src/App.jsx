@@ -1,7 +1,22 @@
-import { useState } from 'react'
+// import { useState } from 'react'
+import  Navbar from "./components/Navbar"
+import Home from "./pages/Home"
 
 function App() {
-  const [message, setMessage] = useState("Click here..")
+  return(
+    <>
+      <Navbar/>
+      <Home/>
+    </>
+  );
+}
+
+export default App
+
+
+// =========================
+/**  
+   const [message, setMessage] = useState("Click here..")
 
   async function clickHandler() {
     try {
@@ -28,6 +43,4 @@ function App() {
       <button onClick={clickHandler}>button</button>
     </>
   )
-}
-
-export default App
+*/
